@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Карточка студента</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
   <body class="gradient">
     <div class="container">
       <h1>Карточка студента</h1>
+      <h2 class="name-course">JavaScript Junior Frontend Developer</h2>
 
       <!-- Информация о студенте -->
 
       <div class="info">
-        <img src="./img/avatar.jpg" alt="avatar" class="avatar" />
+        <div class="avatar-scale">
+          <img
+            src="https://poplavskyi.github.io/first-practical-task/img/avatar.jpg"
+            alt="avatar"
+            class="avatar"
+          />
+        </div>
         <div class="info-text">
           <div>
             <p>Имя, фамилия:</p>
@@ -56,31 +66,31 @@
         <h2>Сколько времени смогу учиться</h2>
         <table>
           <tr>
-            <td>Понедельник</td>
+            <td class="day">Понедельник</td>
             <td>2-3 ч.</td>
           </tr>
           <tr>
-            <td>Вторник</td>
+            <td class="day">Вторник</td>
             <td>2-3 ч.</td>
           </tr>
           <tr>
-            <td>Среда</td>
+            <td class="day">Среда</td>
             <td>2-3 ч.</td>
           </tr>
           <tr>
-            <td>Четверг</td>
+            <td class="day">Четверг</td>
             <td>2-3 ч.</td>
           </tr>
           <tr>
-            <td>Пятница</td>
+            <td class="day">Пятница</td>
             <td>2-3 ч.</td>
           </tr>
           <tr>
-            <td>Суббота</td>
+            <td class="day">Суббота</td>
             <td>4-5 ч.</td>
           </tr>
           <tr>
-            <td>Воскресенье</td>
+            <td class="day">Воскресенье</td>
             <td>4-5 ч.</td>
           </tr>
         </table>
@@ -137,27 +147,35 @@
       <div class="contacts">
         <h2>Контакты</h2>
         <div class="socium">
-          <ul>
+          <ul class="flex-row">
             <li>
               <a href="https://t.me/poplavsky_ua" target="_blank"
-                ><img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" alt="telegram"
+                ><img
+                  src="https://img.icons8.com/color/48/000000/telegram-app--v1.png"
+                  alt="telegram"
               /></a>
             </li>
             <li>
               <a href="https://www.instagram.com/poplavsky.ua/" target="_blank"
-                ><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="instagram"
+                ><img
+                  src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
+                  alt="instagram"
               /></a>
             </li>
             <li>
               <a
                 href="https://www.facebook.com/profile.php?id=100006974981775"
                 target="_blank"
-                ><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="facebook"
+                ><img
+                  src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
+                  alt="facebook"
               /></a>
             </li>
             <li>
               <a href="https://github.com/poplavskyi" target="_blank"
-                ><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="github"
+                ><img
+                  src="https://img.icons8.com/fluency/48/000000/github.png"
+                  alt="github"
               /></a>
             </li>
           </ul>
