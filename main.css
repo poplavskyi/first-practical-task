@@ -41,7 +41,12 @@ body {
 
 h1 {
   text-align: center;
-  padding: 10px 0 20px;
+  padding: 40px 0 10px;
+}
+
+.name-course {
+  font-family: "Dancing Script", cursive;
+  padding: 0 0 20px;
 }
 
 h2 {
@@ -51,16 +56,27 @@ h2 {
 
 .info {
   display: flex;
+  justify-content: flex-start;
   padding-bottom: 20px;
 }
 
+.avatar-scale {
+  overflow: hidden;
+}
+
 .avatar {
+  display: block;
   width: 300px;
   border-radius: 8px;
+  transition: 1s;
+}
+
+.avatar:hover {
+  transform: scale(1.2);
 }
 
 .info-text {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .info-text-bold {
@@ -74,10 +90,18 @@ h2 {
   margin-bottom: 20px;
   box-shadow: inset 0px 0px 40px 0px rgba(126, 155, 189, 0.35);
   border-radius: 8px;
+  line-height: 30px;
 }
 
-li {
-  margin-left: 30px;
+.purpose li {
+  margin-left: 120px;
+  transition: 1s all;
+  cursor: grab;
+}
+
+.purpose li:hover {
+  color: rgb(64, 18, 109);
+  font-weight: bold;
 }
 
 .study {
@@ -86,15 +110,27 @@ li {
   margin-bottom: 20px;
   box-shadow: inset 0px 0px 40px 0px rgba(126, 155, 189, 0.35);
   border-radius: 8px;
+  line-height: 25px;
 }
 
-.study td {
-  padding-left: 50px;
+.study .day {
+  padding-right: 60px;
 }
 
 .study table {
   margin-left: auto;
   margin-right: auto;
+  border-collapse: collapse;
+}
+
+.study td {
+  transition: 1s all;
+  cursor: grab;
+}
+
+.study td:hover {
+  color: rgb(64, 18, 109);
+  text-decoration: underline;
 }
 
 .courses {
@@ -107,15 +143,32 @@ li {
 
 .courses table {
   width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 30px;
+}
+
+.courses th {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(164, 120, 207);
 }
 
 .courses td {
   text-align: center;
+  padding-top: 10px;
 }
 
 .courses a {
+  display: inline-block;
   color: rgb(243, 213, 213);
-  /* text-decoration: none; */
+  transition: 1s all;
+  cursor: grab;
+}
+
+.courses a:hover {
+  transform: scale(1.5);
+  color: rgb(64, 18, 109);
 }
 
 .contacts {
@@ -133,19 +186,8 @@ li {
 
 .socium ul {
   list-style: none;
-}
-
-.socium ul li {
-  float: left;
-  width: 20%;
-}
-
-.socium ul li a {
-  display: block;
-}
-
-.socium ul li img {
-  margin: 0 40%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .socium ul li a:hover {
