@@ -195,16 +195,23 @@ h2 {
   opacity: 0.8;
 }
 
-@media (max-width: 715px) {
+@media (max-width: 768px) {
   body {
-    margin: 0 20px;
+    width: 100%;
+    margin: auto;
   }
   .info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 0;
   }
   .info-text {
+    padding-top: 20px;
+    margin: auto;
     text-align: center;
+  }
+  .container {
+    width: 90%;
   }
 }
