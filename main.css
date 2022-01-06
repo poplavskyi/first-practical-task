@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +47,7 @@ h1 {
 }
 
 .name-course {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   padding: 0 0 20px;
 }
 
@@ -123,14 +125,13 @@ h2 {
   border-collapse: collapse;
 }
 
-.study td {
+.study tr {
   transition: 1s all;
   cursor: grab;
 }
 
-.study td:hover {
+.study tr:hover {
   color: rgb(64, 18, 109);
-  text-decoration: underline;
 }
 
 .courses {
@@ -163,7 +164,7 @@ h2 {
   display: inline-block;
   color: rgb(243, 213, 213);
   transition: 1s all;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .courses a:hover {
@@ -192,4 +193,18 @@ h2 {
 
 .socium ul li a:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 715px) {
+  body {
+    margin: 0 20px;
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info-text {
+    text-align: center;
+  }
 }
